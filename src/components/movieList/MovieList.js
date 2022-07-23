@@ -24,11 +24,13 @@ const MovieList = () => {
 
     return (
         <div className="movie__list">
-            <h2 className="list__title">{(type ? type : "POPULAR").toUpperCase()}</h2>
+            <h2 className="list__title">{(type=='top_rated' ? 'TOP RATED' : type).toUpperCase()}</h2>   
+            {/* top_rated showed with an underscore in view */}
+        
             <div className="list__cards">
                 {
                     movieList.map(movie => (
-                        
+
                         <Card movie={movie} />
                     ))
                 }
@@ -38,3 +40,5 @@ const MovieList = () => {
 }
 
 export default MovieList
+
+// (type ? type : "POPULAR").toUpperCase()

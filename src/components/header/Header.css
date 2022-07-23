@@ -24,8 +24,12 @@ a > span:hover {
 }
 
 .header__icon {
-    width: 80px;
+    width: 85px;
+    height: 70px;
     cursor: pointer;
+   object-fit: cover;
+  
+    
 }
 
 .user__avatar {
