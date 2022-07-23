@@ -13,8 +13,10 @@ const Home = () => {
     )
       .then((res) => res.json())
       .then((data) => setPopularMovies(data.results));
+      
   }, []);
-
+  console.log(popularMovies);
+  
   return (
     <>
       <div className="poster">
