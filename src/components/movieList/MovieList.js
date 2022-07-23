@@ -17,15 +17,15 @@ const MovieList = () => {
     }, [type])
 
     const getData = () => {
-        fetch(`https://api.themoviedb.org/3/movie/${type ? type : "popular"}?api_key=b14e0aeb4a2eb281fe2afcabe7c81940&language=en-US`)
+        fetch(`https://api.themoviedb.org/3/movie/${type ? type : "upcoming"}?api_key=b14e0aeb4a2eb281fe2afcabe7c81940&language=en-US`)
         .then(res => res.json())
         .then(data => setMovieList(data.results))
     }
 
     return (
         <div className="movie__list">
-            <h2 className="list__title">{(type=='top_rated' ? 'TOP RATED' : type).toUpperCase()}</h2>   
-            {/* top_rated showed with an underscore in view */}
+            <h2 className="list__title">{(type ? type  : "UPCOMING").toUpperCase().replace(/_/g, ' ')}</h2>   
+           
         
             <div className="list__cards">
                 {

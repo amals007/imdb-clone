@@ -16,7 +16,8 @@ a > span{
     margin: 0 30px;
     font-size: 1.3rem;
     cursor: pointer;
-    color: white;
+    color: rgb(0, 0, 0);
+    
 }
 
 a > span:hover {

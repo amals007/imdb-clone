@@ -7,8 +7,9 @@ const Header = () => {
         <div className='header'>
             <div className="headerLeft">
                 <Link to='/'><img className='header__icon' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiYKnFM5dWrrzCem59_BMZOpFGknCPyo7J7A&usqp=CAU" alt="logo" /></Link>
-                <Link to='/movies/popular' style={{textDecoration: 'none'}}><span>Popular</span></Link>
                 <Link to='/movies/top_rated' style={{textDecoration: 'none'}}><span>Top Rated</span></Link>
+                <Link to='/movies/now_playing' style={{textDecoration: 'none'}}><span>Now Playing</span></Link>
+                <Link to='/movies/popular' style={{textDecoration: 'none'}}><span>Popular</span></Link>
                 <Link to='/movies/upcoming' style={{textDecoration: 'none'}}><span>Upcoming</span></Link>
             </div>
 

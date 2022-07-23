@@ -16,7 +16,6 @@ const Home = () => {
       .then((data) => setPopularMovies(data.results));
       
   }, []);
-  console.log(popularMovies);
   
   return (
     <>
@@ -58,6 +57,7 @@ const Home = () => {
             </Link>
           ))}
         </Carousel>
+        <MovieList/>
       </div>
      
     </>
