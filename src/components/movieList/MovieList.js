@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react"
 import "./MovieList.css"
 import { useParams } from "react-router-dom"
-import Card from "../card/Card"
+import Card from "../Card/Card"
 
 const MovieList = () => {
     
@@ -40,5 +40,4 @@ const MovieList = () => {
 }
 
 export default MovieList
-
 // (type ? type : "POPULAR").toUpperCase()
