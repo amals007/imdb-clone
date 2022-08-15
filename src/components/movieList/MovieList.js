@@ -8,12 +8,14 @@ const MovieList = () => {
     const [movieList, setMovieList] = useState([])
     const {type} = useParams()
 
-    useEffect(() => {
-        getData()
-    }, [])
+    // useEffect(() => {
+    //     getData()
+    //     console.log('i am first useEffect');
+    // }, [])
 
     useEffect(() => {
         getData()
+        
     }, [type])
 
     const getData = () => {

@@ -4,12 +4,13 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 import {Link} from 'react-router-dom'
 import MovieList from '../MovieList/MovieList'
+import axios from 'axios'
 
 const Home = () => {
   const [popularMovies, setPopularMovies] = useState([]);
 
   useEffect(() => {
-    fetch(
+    axios.get(
       "https://api.themoviedb.org/3/movie/popular?api_key=b14e0aeb4a2eb281fe2afcabe7c81940&language=en-US"
     )
       .then((res) => res.json())
