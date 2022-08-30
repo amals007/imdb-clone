@@ -17,11 +17,11 @@ const Home = () => {
       
   }, []);
   
-  return (
+  return ( 
     <>
       <div className="poster">
         <Carousel
-          showThumbs={false}
+           showThumbs={false}
           autoPlay={true}
           transitionTime={3}
           infiniteLoop={true}
